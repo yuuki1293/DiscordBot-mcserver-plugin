@@ -1,0 +1,4 @@
+name: PublishAuthenticationCode
+version: 1.0.0
+main: com.github.yuuki1293.publishauthenticationcode.PublishAuthenticationCode
+api-version: 1.17
