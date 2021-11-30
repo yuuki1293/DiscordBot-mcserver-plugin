@@ -1,0 +1,8 @@
+mysql:
+  url: "jdbc:mysql://localhost/mydb"
+  port: "3306"
+  db: "mydb"
+  user: "root"
+  password: ""
+
+tokenLength: 99999
