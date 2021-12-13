@@ -6,6 +6,8 @@ version := "0.1"
 
 scalaVersion := "2.13.7"
 
+scalacOptions += "-deprecation"
+
 resolvers += "maven.elmakers.com" at "https://maven.elmakers.com/repository/"
 resolvers += Resolver.bintrayIvyRepo("com.eed3si9n", "sbt-plugins")
 libraryDependencies ++= Seq(
@@ -30,7 +32,7 @@ slick := {
   val slickDriver = "slick.jdbc.MySQLProfile"
   val pkg = "mydb"
   val user = "root"
-  val password = ""
+  val password = "anypassw0rd"
   val cp = (Compile / dependencyClasspath) value
   val s = streams value
 

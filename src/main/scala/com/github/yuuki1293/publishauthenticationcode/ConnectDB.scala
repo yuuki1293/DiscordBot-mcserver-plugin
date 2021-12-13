@@ -25,7 +25,7 @@ object ConnectDB {
     }, 60 seconds)
   }
 
-  def WhiteToken(token: Int, player: Player, plugin: JavaPlugin): Option[Unit] = {
+  def InsertToken(token: Int, player: Player, plugin: JavaPlugin): Option[Unit] = {
     val url = appConf.getMysqlUrl
     val db = Database.forURL(url, appConf.getMysqlUser, appConf.getMysqlPassword, driver = "com.mysql.cj.jdbc.Driver")
 

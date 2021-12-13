@@ -35,7 +35,7 @@ class PublishAuthenticationCode extends JavaPlugin with Listener {
     }
 
     val token = getToken
-    ConnectDB.WhiteToken(token, e.getPlayer, this) match {
+    ConnectDB.InsertToken(token, e.getPlayer, this) match {
       case Some(_) => e.getPlayer.kickPlayer(token.toString)
       case None => e.getPlayer.kickPlayer("エラーが発生しました。")
     }
